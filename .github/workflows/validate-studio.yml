@@ -1,0 +1,40 @@
+name: Validate studio automation
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check script syntax
+        run: |
+          node --check scripts/create-reel-brief.mjs
+          node --check scripts/create-production-pack.mjs
+          node --check scripts/generate-weekly-plan.mjs
+      - name: Test production pack generator
+        run: npm run production-pack -- "Rainy night cafe"
+      - name: Test weekly planner
+        env:
+          TZ: Asia/Dubai
+        run: npm run weekly-plan
+      - name: Verify generated files
+        run: |
+          test -s projects/rainy-night-cafe/reel-brief.md
+          test -s projects/rainy-night-cafe/shot-list.csv
+          test -s projects/rainy-night-cafe/prompts/image-prompts.md
+          test -s projects/rainy-night-cafe/prompts/video-prompts.md
+          test -s projects/rainy-night-cafe/edit-plan-vn.md
+          test -s projects/rainy-night-cafe/caption-draft.md
+          test -s projects/rainy-night-cafe/asset-checklist.md
