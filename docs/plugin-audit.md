@@ -88,3 +88,22 @@ Krea's public node-app listing contains community workflows; the workspace-only 
 5. Never retry an uncertain asynchronous job.
 6. Review every export and obtain approval before publishing.
 7. Do not schedule until Metricool resolves the intended Instagram brand and the finished video is available.
+
+
+## Other relevant plugins found in the directory
+
+These are useful in narrower situations, but are not part of the default pipeline today:
+
+- **vidIQ — optional for growth research and cross-platform expansion.** It can research outperforming YouTube/Instagram/TikTok videos, competitor channels, keywords and trends; analyse hooks/transcripts; help titles/thumbnails; repurpose long videos into vertical clips; and publish/schedule across YouTube, Instagram, TikTok, X and Facebook. Best value if the channel expands to YouTube Shorts or TikTok. It overlaps with Metricool for publishing and analytics.
+- **Descript — optional for narration and subtitles.** Transcript-based media editing, Underlord assistance, share links and transcript/Premiere/Resolve timeline exports. Useful for dialogue, voiceover, subtitles and repurposing speech-heavy footage. Less useful for silent rainy-night loops already assembled in VN.
+- **Higgsfield — optional image/video alternative.** Text/reference image generation, image animation, reference motion transfer, presets/effects and voiceovers. It overlaps with Krea and current creative tools. No connected account/free allowance was verified in this audit.
+- **TinyFish — optional cloud-browser automation.** Can automate account portals and extract public/authorized site data using saved browser profiles. Browser Use and Firecrawl already cover current research needs; do not provide social-account credentials unless a specific task requires them.
+- **Supermetrics and Windsor.ai — later-stage analytics.** Useful for cross-channel marketing and paid-ad reporting; too complex for one early-stage organic Instagram page.
+- **monday.com — optional task/approval board.** Supports boards, owners, timelines, status, updates and multi-step workflows. Not needed while GitHub Actions handles document scheduling.
+- **Webflow / WordPress — website publishing.** Useful only if a standalone studio website or portfolio is needed.
+- **tldraw — diagramming.** Useful for process maps, not necessary for the media pipeline.
+
+### Metricool and Canva details
+
+- Metricool's Free plan includes one brand, up to 20 posts/month, 30 days of analytics and its ChatGPT/MCP integration. This fits roughly 12 Instagram Reels/month. Duplicated posts to other social networks count per network. Metricool's external API is limited to Advanced and Custom plans, so do not assume a Free account offers a direct GitHub Actions API route. [Official pricing](https://metricool.com/pricing/) and [API plan details](https://help.metricool.com/plans-add-ons-and-api-access-explained-xux1u).
+- Canva Free in the UAE is listed at AED 0/year, with one Brand Kit limited to three colours, 5 GB storage and limited AI access. This is enough for reusable static covers and title cards; richer AI features and social scheduling are plan-specific. [Canva UAE pricing](https://www.canva.com/pricing/?countryCode=ae).
