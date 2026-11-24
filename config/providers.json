@@ -93,12 +93,27 @@
     "primary": "Canva",
     "status": "plugin installed; Canva workspace/action access not verified in this session",
     "brandKitStatus": "no existing Brand Kits returned",
-    "use": "Reel covers, thumbnails, caption cards, profile graphics and brand templates"
+    "use": "Reel covers, thumbnails, caption cards, profile graphics and brand templates",
+    "freePlanReference": {
+      "annualPriceAED": 0,
+      "brandKits": 1,
+      "brandKitMaximumColors": 3,
+      "storageGB": 5,
+      "aiAccess": "limited"
+    }
   },
   "publishing": {
     "primary": "Metricool",
     "status": "plugin installed; Instagram/social profile and action access not verified in this session",
-    "workflow": "Verify an Instagram connection in Metricool, then schedule reviewed MP4s only. Until the account connection and publishing actions are confirmed, use manual Instagram publishing."
+    "workflow": "Verify an Instagram connection in Metricool, then schedule reviewed MP4s only. Until the account connection and publishing actions are confirmed, use manual Instagram publishing.",
+    "freePlanReference": {
+      "brands": 1,
+      "postsPerMonth": 20,
+      "analyticsHistoryDays": 30,
+      "mcpIncluded": true,
+      "externalApi": "Advanced and Custom plans only",
+      "note": "One profile per social network within the single brand; repeated cross-network publishing is counted per network."
+    }
   },
   "planningAndResearch": {
     "primary": "GitHub Actions",
