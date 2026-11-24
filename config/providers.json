@@ -10,10 +10,10 @@
   },
   "image": {
     "primary": {
-      "provider": "Krea",
-      "model": "krea/krea-2/medium",
-      "use": "expressive illustrated environments and style exploration",
-      "access": "catalogued; entitlement and balance must be checked"
+      "provider": "Magnific",
+      "mode": "auto",
+      "use": "daily free still keyframes and visual concepts",
+      "access": "20 free image uses reported today; video generation is paid-only"
     },
     "budgetAlternative": {
       "provider": "Krea",
@@ -26,25 +26,23 @@
       "model": "pe_image_v1",
       "costCredits": 6,
       "use": "exact-grid pixel sprites and props",
-      "access": "100 monthly credits reported"
+      "access": "74 monthly credits remaining after sprite generation and animation"
     },
     "secondary": {
-      "provider": "Magnific",
-      "use": "occasional still concepts",
-      "access": "20 daily free image uses in auto mode; no paid credits"
+      "provider": "Krea",
+      "models": [
+        "krea/krea-2/medium",
+        "google/nano-banana-flash-lite"
+      ],
+      "use": "future image fallback and reference editing",
+      "access": "connected API workspace currently has 0 compute units"
     }
   },
   "video": {
     "primary": {
-      "provider": "Krea",
-      "modelCandidates": [
-        "minimax/hailuo-2.3-fast",
-        "google/veo-3.1-lite",
-        "bytedance/seedance-2-mini",
-        "lightricks/ltx-video-2.5-fast"
-      ],
-      "use": "image-to-video from approved stills",
-      "access": "catalogued; entitlement and actual job cost must be checked"
+      "provider": "VN Video Editor",
+      "use": "assemble stills and reusable overlays into the finished Reel",
+      "access": "no confirmed free AI video-generation API is available in the currently checked accounts"
     },
     "pixelLoops": {
       "provider": "Pixel Engine",
@@ -53,7 +51,7 @@
         "pixel-engine-v1.5": 26
       },
       "use": "short looping sprite animation",
-      "access": "100 monthly credits reported"
+      "access": "74 monthly credits remain; a rain loop is stored in assets/rainy-night/rain-overlay-128.webp"
     },
     "blockedOrLimited": [
       {
@@ -68,17 +66,27 @@
         "provider": "MegaScenes 3D Animation",
         "reason": "zero credits reported"
       }
-    ]
+    ],
+    "motionCandidates": {
+      "provider": "Krea",
+      "models": [
+        "minimax/hailuo-2.3-fast",
+        "google/veo-3.1-lite",
+        "bytedance/seedance-2-mini",
+        "lightricks/ltx-video-2.5-fast"
+      ],
+      "access": "catalogued, but Krea API compute balance is 0; do not submit video jobs"
+    }
   },
   "audio": {
     "primary": {
-      "provider": "ElevenLabs",
-      "use": "narration, dialogue, original music and sound effects",
-      "access": "voice catalogue available; estimate generation cost"
+      "provider": "VN / recorded ambience",
+      "use": "default sound bed using licensed ambience or recorded Foley"
     },
     "secondary": {
-      "provider": "Krea",
-      "use": "music, sound and speech where entitled"
+      "provider": "ElevenLabs / Krea audio",
+      "use": "voiceover, dialogue, music and sound effects when needed",
+      "access": "check live credit estimate before generating"
     },
     "default": "Atmospheric Reels can use ambience without voiceover."
   },
@@ -91,9 +99,9 @@
   },
   "design": {
     "primary": "Canva",
-    "status": "plugin installed; Canva workspace/action access not verified in this session",
+    "status": "Canva tools connected; no existing Brand Kit was found",
     "brandKitStatus": "no existing Brand Kits returned",
-    "use": "Reel covers, thumbnails, caption cards, profile graphics and brand templates",
+    "use": "editable 9:16 Reel covers, title cards and profile graphics",
     "freePlanReference": {
       "annualPriceAED": 0,
       "brandKits": 1,
@@ -104,8 +112,8 @@
   },
   "publishing": {
     "primary": "Metricool",
-    "status": "plugin installed; Instagram/social profile and action access not verified in this session",
-    "workflow": "Verify an Instagram connection in Metricool, then schedule reviewed MP4s only. Until the account connection and publishing actions are confirmed, use manual Instagram publishing.",
+    "status": "Metricool tools connected, but no social network is connected to the current brand",
+    "workflow": "Connect the intended Instagram Business/Creator profile at https://app.metricool.com/brands/connections?blogId=8330788. Verify it with getBrandSettings, then schedule only a reviewed MP4.",
     "freePlanReference": {
       "brands": 1,
       "postsPerMonth": 20,
@@ -122,5 +130,11 @@
       "Notion"
     ],
     "firecrawlCreditsReported": 1000
+  },
+  "assets": {
+    "rainLoop": "assets/rainy-night/rain-overlay-128.webp",
+    "rainLoopMetadata": "assets/rainy-night/rain-overlay-128.json",
+    "cafeKeyframe": "assets/rainy-night/cafe-window-keyframe.jpg",
+    "notes": "Included in weekly downloadable bundles."
   }
 }
