@@ -1,0 +1,16 @@
+{
+  "studioName": "Zero-Budget Animation Studio",
+  "visualIdentity": "dark cinematic pixel art",
+  "themes": ["rainy nights", "cafes", "bedrooms", "cities"],
+  "aspectRatio": "9:16",
+  "targetDurationSeconds": 20,
+  "weeklyReelsTarget": 3,
+  "editor": "VN Video Editor",
+  "defaultLanguage": "English",
+  "productionRules": [
+    "Keep character design and scene lighting consistent across shots.",
+    "Generate scenes as separate clips or layers.",
+    "Use only free tools or free tiers unless explicitly approved.",
+    "Review every export before publishing."
+  ]
+}
