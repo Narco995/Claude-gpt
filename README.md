@@ -33,7 +33,7 @@ The generator prepares the production materials; it does not generate actual ima
 npm run weekly-plan
 ```
 
-Creates a weekly three-Reel plan in `weekly-plans/`, rotating among rainy city scenes, cafés, bedrooms and related night settings.
+Creates a weekly three-Reel plan in `weekly-plans/` and automatically builds three matching production packs under `projects/weekly/<year>-W<week>/`. The ideas rotate among rainy city scenes, cafés, bedrooms and related night settings.
 
 ## Run from GitHub on iPhone
 
@@ -42,7 +42,7 @@ Creates a weekly three-Reel plan in `weekly-plans/`, rotating among rainy city s
 3. Enter a topic, then start the workflow.
 4. Open the finished run and download the `reel-production-pack` artifact.
 
-The **Weekly Reel planner** runs every Monday at 08:00 UAE time and commits the week's plan automatically.
+The **Weekly Reel planner** runs every Monday at 08:00 UAE time, generates the weekly plan plus all three production packs, commits them to the repository, and uploads a downloadable bundle.
 
 ## Existing brief command
 
@@ -54,7 +54,7 @@ Creates a simple starting brief in `projects/<slug>/reel-brief.md`.
 
 ## Automation boundaries
 
-Automated: briefs, prompts, shot lists, captions, VN edit plans, asset checklists, weekly planning and downloadable packaging.
+Automated: briefs, prompts, shot lists, captions, VN edit plans, asset checklists, three weekly production packs, planning and downloadable packaging.
 
 Still requires a person or a connected generation service: creating image/video media, choosing music with appropriate rights, reviewing exports and publishing to Instagram. No paid model API key is required by the included workflows.
 
