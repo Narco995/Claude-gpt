@@ -32,4 +32,4 @@ GitHub Actions generates plans and production documents; it does not call ChatGP
 
 ## Reusable rainy-night assets
 
-The repository includes `assets/rainy-night/rain-overlay-128.webp` (128×128, 8 frames at 8 fps) and a cinematic café-window keyframe reference. Rain-themed production packs automatically reference these assets in the VN layer plan and checklist. The weekly downloadable artifact includes the entire rainy-night asset directory.
+The repository includes `assets/rainy-night/rain-overlay-128.webp` (128×128, 8 frames at 8 fps), `assets/rainy-night/cafe-window-keyframe.jpg` and `assets/rainy-night/cafe-steam-128.webp` (128×128, 8 frames at 8 fps; includes a small cup rim). Rain-themed packs reference the rain overlay; café/coffee packs also reference the steam detail. Align the steam asset over a matching cup close-up. All three assets are included in the weekly downloadable bundle.
