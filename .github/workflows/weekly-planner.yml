@@ -19,18 +19,27 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Generate this week's plan
+      - name: Generate this week's plan and three production packs
         env:
           TZ: Asia/Dubai
         run: npm run weekly-plan
-      - name: Commit weekly plan
+      - name: Commit weekly plan and production packs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add weekly-plans/
+          git add weekly-plans/ projects/weekly/
           if git diff --cached --quiet; then
-            echo "No weekly plan changes to commit."
+            echo "No weekly changes to commit."
           else
-            git commit -m "chore: generate weekly Reel plan"
+            git commit -m "chore: generate weekly Reel plan and production packs"
             git push
           fi
+      - name: Upload this week's production bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-reel-production-packs
+          path: |
+            weekly-plans/
+            projects/weekly/
+          if-no-files-found: error
+          retention-days: 14
