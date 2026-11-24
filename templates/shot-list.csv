@@ -1,0 +1,5 @@
+shot,duration_seconds,visual,character_action,camera,ambient_motion,audio,notes
+01,4,Opening establishing shot,None,Slow push-in,Rain and reflections,Ambient rain,Establish mood
+02,5,Medium shot,One simple action,Locked,Steam or light flicker,Soft texture,Preserve continuity
+03,5,Detail insert,Small gesture,Locked,Subtle environmental motion,Emotional cue,Create visual change
+04,6,Closing composition,Hold or turn,Very slow pull-back,Loop-friendly ambience,Resolve or fade,Match opening for loop
