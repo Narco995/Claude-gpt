@@ -40,8 +40,10 @@ jobs:
           test -s projects/rainy-night-cafe/asset-checklist.md
           test -s assets/rainy-night/rain-overlay-128.webp
           test -s assets/rainy-night/cafe-window-keyframe.jpg
+          test -s assets/rainy-night/cafe-steam-128.webp
           grep -q 'assets/rainy-night/rain-overlay-128.webp' projects/rainy-night-cafe/asset-checklist.md
           grep -q 'assets/rainy-night/rain-overlay-128.webp' projects/rainy-night-cafe/edit-plan-vn.md
+          grep -q 'assets/rainy-night/cafe-steam-128.webp' projects/rainy-night-cafe/asset-checklist.md
           test -s projects/rainy-night-cafe/generation-routing.md
           find projects/weekly -name edit-plan-vn.md -print -quit | grep -q .
           find weekly-plans -name '*.md' -print -quit | grep -q .

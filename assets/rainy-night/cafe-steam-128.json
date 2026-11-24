@@ -1,0 +1,23 @@
+{
+  "asset": "cafe-steam-128.webp",
+  "dimensions": {
+    "width": 128,
+    "height": 128
+  },
+  "animation": {
+    "frames": 8,
+    "fps": 8,
+    "frame_duration_ms": 125,
+    "loop": true
+  },
+  "description": "Three gently curling steam ribbons above a small cup rim; suitable for a café cup detail shot.",
+  "source": {
+    "provider": "Pixel Engine",
+    "sprite_job_id": "aefd8e73-aa99-40ab-a39b-0d70a99203c0",
+    "animation_job_id": "7c64a318-63ac-481c-b8a3-3372fa4424e4",
+    "seed": 1357982859,
+    "credits_spent": 26,
+    "credits_remaining_after_generation": 48
+  },
+  "usage_note": "This includes a small cup rim, so align it over a matching cup close-up instead of using it as an isolated steam-only overlay."
+}

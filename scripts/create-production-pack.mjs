@@ -43,6 +43,7 @@ const imagePrompts = '# Image prompts — ' + title + '\n\nGlobal style: ' + vis
 const videoPrompts = '# Image-to-video prompts — ' + title + '\n\nFor each shot, animate the supplied still without redesigning or replacing any object. Preserve exact pixel-art rendering, composition, subject identity, perspective and lighting. Stable geometry, restrained motion, no cuts, no added text or logos.\n\n' + shots.map(s => '## Shot ' + s.id + ' — ' + s.name + ' (' + s.duration + 's)\n\n' + s.action + ' Camera: ' + s.camera + '. Keep the first and last moments calm and easy to trim.').join('\n\n') + '\n';
 const brief = '# Reel brief: ' + title + '\n\n- Created: ' + new Intl.DateTimeFormat('en-GB', { dateStyle: 'long', timeZone: 'Asia/Dubai' }).format(new Date()) + ' (Dubai time)\n- Format: vertical 9:16\n- Target duration: 20 seconds\n- Visual direction: ' + visual + '\n- Setting: ' + setting + '\n- Hook: Open immediately on the strongest atmospheric image; no logo intro.\n- Emotional beat: Quiet reflection and a small human moment.\n- Ending: Return to a composition that can loop into the opening.\n\n## Story beats\n\n1. Establish the atmosphere.\n2. Introduce one subtle character moment.\n3. Cut to one meaningful environmental detail.\n4. Resolve into a loop-friendly final composition.\n';
 const hasRainyAsset = /rain|storm|wet|window|cafe|café|coffee|city|street|train|metro/.test(lower);
+const hasCafeAsset = /cafe|café|coffee|espresso/.test(lower);
 const reusableRainAssetNote = hasRainyAsset
   ? [
       '',
@@ -51,6 +52,7 @@ const reusableRainAssetNote = hasRainyAsset
       '- Rain loop: `assets/rainy-night/rain-overlay-128.webp` (128×128, 8-frame loop at 8 fps). Import as a foreground VN overlay, scale to 9:16, lower opacity and extend across the shot.',
       '- Keyframe reference: `assets/rainy-night/cafe-window-keyframe.jpg` (dark navy/amber rainy café visual reference).',
       '- If VN does not import animated WebP, convert it to a supported video/PNG sequence before editing.',
+      ...(hasCafeAsset ? ['- Café detail loop: `assets/rainy-night/cafe-steam-128.webp` (8-frame loop, includes a small cup rim; place over a cup/detail shot).'] : []),
       ''
     ].join('\n')
   : '';
@@ -64,6 +66,7 @@ const checklist = [
     '- [ ] Add reusable rain loop as a VN foreground layer: assets/rainy-night/rain-overlay-128.webp',
     '- [ ] Review rainy café style reference: assets/rainy-night/cafe-window-keyframe.jpg'
   ] : []),
+  ...(hasCafeAsset ? ['- [ ] Add café steam/cup detail loop: assets/rainy-night/cafe-steam-128.webp'] : []),
   '- [ ] Shot 01 environment still',
   '- [ ] Shot 02 character / medium still',
   '- [ ] Shot 03 detail still',

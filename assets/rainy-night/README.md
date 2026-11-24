@@ -21,3 +21,11 @@
 - Use as a style reference for palette, lighting, composition and rainy café atmosphere.
 - It is not a finished Reel or a substitute for shot-specific stills.
 - Metadata: `cafe-window-keyframe.json`.
+
+
+## Café steam detail
+
+- File: `cafe-steam-128.webp`
+- Size: 128 × 128 px
+- Animation: 8 frames at 8 fps, looping
+- Includes three steam trails and a small cup rim. Use as a detail insert aligned to a matching cup shot; do not use as a general standalone steam overlay.
