@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "brief": "node scripts/create-reel-brief.mjs"
+    "brief": "node scripts/create-reel-brief.mjs",
+    "production-pack": "node scripts/create-production-pack.mjs",
+    "weekly-plan": "node scripts/generate-weekly-plan.mjs"
   },
   "engines": {
     "node": ">=18"
