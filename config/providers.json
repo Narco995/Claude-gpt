@@ -91,14 +91,14 @@
   },
   "design": {
     "primary": "Canva",
-    "status": "connected",
+    "status": "plugin installed; Canva workspace/action access not verified in this session",
     "brandKitStatus": "no existing Brand Kits returned",
     "use": "Reel covers, thumbnails, caption cards, profile graphics and brand templates"
   },
   "publishing": {
     "primary": "Metricool",
-    "status": "plugin connected; initial brand lookup did not resolve an eligible linked account",
-    "workflow": "Resolve the intended Instagram brand and permissions; schedule only reviewed MP4s with explicit approval."
+    "status": "plugin installed; Instagram/social profile and action access not verified in this session",
+    "workflow": "Verify an Instagram connection in Metricool, then schedule reviewed MP4s only. Until the account connection and publishing actions are confirmed, use manual Instagram publishing."
   },
   "planningAndResearch": {
     "primary": "GitHub Actions",
