@@ -1,0 +1,12 @@
+{
+  "name": "zero-budget-animation-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "brief": "node scripts/create-reel-brief.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
