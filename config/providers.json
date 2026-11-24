@@ -4,25 +4,34 @@
     "neverSpendWithoutApproval": true,
     "neverAssumeFreeTierEqualsApiAccess": true,
     "checkLiveModelCatalogBeforeGeneration": true,
-    "checkModelSchemaBeforeGeneration": true
+    "checkModelSchemaBeforeGeneration": true,
+    "reviewOneTestBeforeBatch": true,
+    "humanApprovalBeforePublishing": true
   },
   "image": {
     "primary": {
       "provider": "Krea",
       "model": "krea/krea-2/medium",
-      "use": "illustrated environments and style exploration",
+      "use": "expressive illustrated environments and style exploration",
       "access": "catalogued; entitlement and balance must be checked"
     },
     "budgetAlternative": {
+      "provider": "Krea",
+      "model": "google/nano-banana-flash-lite",
+      "use": "fast image tests",
+      "access": "catalogued; check account entitlement"
+    },
+    "pixelAssets": {
       "provider": "Pixel Engine",
-      "model": "nb_flash",
-      "costCredits": 12,
-      "use": "pixel sprites and props"
+      "model": "pe_image_v1",
+      "costCredits": 6,
+      "use": "exact-grid pixel sprites and props",
+      "access": "100 monthly credits reported"
     },
     "secondary": {
       "provider": "Magnific",
       "use": "occasional still concepts",
-      "access": "20 daily free image uses in auto mode; no video credits"
+      "access": "20 daily free image uses in auto mode; no paid credits"
     }
   },
   "video": {
@@ -35,9 +44,9 @@
         "lightricks/ltx-video-2.5-fast"
       ],
       "use": "image-to-video from approved stills",
-      "access": "catalogued; check entitlement and cost"
+      "access": "catalogued; entitlement and actual job cost must be checked"
     },
-    "spriteAlternative": {
+    "pixelLoops": {
       "provider": "Pixel Engine",
       "costCredits": {
         "pixel-engine-v1.1": 20,
@@ -49,29 +58,29 @@
     "blockedOrLimited": [
       {
         "provider": "Runway",
-        "reason": "1 credit and no available video models"
+        "reason": "1 credit and no available video, speech, music or sound-effect models"
       },
       {
         "provider": "Magnific",
-        "reason": "no video credits on free account"
+        "reason": "no paid credits; free allowance is image generation"
       },
       {
-        "provider": "3D Animation",
+        "provider": "MegaScenes 3D Animation",
         "reason": "zero credits reported"
       }
     ]
   },
   "audio": {
     "primary": {
+      "provider": "ElevenLabs",
+      "use": "narration, dialogue, original music and sound effects",
+      "access": "voice catalogue available; estimate generation cost"
+    },
+    "secondary": {
       "provider": "Krea",
       "use": "music, sound and speech where entitled"
     },
-    "secondary": {
-      "provider": "ElevenLabs",
-      "use": "narration, dialogue and sound effects",
-      "access": "voice catalogue available; estimate generation cost"
-    },
-    "note": "Default atmospheric Reels can use ambience without voiceover."
+    "default": "Atmospheric Reels can use ambience without voiceover."
   },
   "editing": {
     "primary": "VN Video Editor",
@@ -80,20 +89,16 @@
       "Krea enhancement/video tools"
     ]
   },
-  "publishing": {
-    "primary": "Metricool",
-    "status": "connected but no social profile is connected yet",
-    "freePlanReference": {
-      "brands": 1,
-      "publishedPostsPerMonth": 20,
-      "analyticsHistoryDays": 30
-    },
-    "workflow": "Connect Instagram first; schedule reviewed MP4s only."
-  },
   "design": {
     "primary": "Canva",
-    "status": "connection pending",
-    "use": "covers, thumbnails, caption cards and brand templates"
+    "status": "connected",
+    "brandKitStatus": "no existing Brand Kits returned",
+    "use": "Reel covers, thumbnails, caption cards, profile graphics and brand templates"
+  },
+  "publishing": {
+    "primary": "Metricool",
+    "status": "plugin connected; initial brand lookup did not resolve an eligible linked account",
+    "workflow": "Resolve the intended Instagram brand and permissions; schedule only reviewed MP4s with explicit approval."
   },
   "planningAndResearch": {
     "primary": "GitHub Actions",
