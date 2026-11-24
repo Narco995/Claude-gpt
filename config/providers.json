@@ -13,7 +13,7 @@
       "provider": "Magnific",
       "mode": "auto",
       "use": "daily free still keyframes and visual concepts",
-      "access": "20 free image uses reported today; video generation is paid-only"
+      "access": "19 free image uses remaining today; video generation is paid-only"
     },
     "budgetAlternative": {
       "provider": "Krea",
@@ -26,7 +26,7 @@
       "model": "pe_image_v1",
       "costCredits": 6,
       "use": "exact-grid pixel sprites and props",
-      "access": "74 monthly credits remaining after sprite generation and animation"
+      "access": "48 monthly credits remaining after rain and café steam loop assets"
     },
     "secondary": {
       "provider": "Krea",
@@ -51,7 +51,7 @@
         "pixel-engine-v1.5": 26
       },
       "use": "short looping sprite animation",
-      "access": "74 monthly credits remain; a rain loop is stored in assets/rainy-night/rain-overlay-128.webp"
+      "access": "48 monthly credits remain; rain and café steam detail loops are stored in assets/rainy-night/"
     },
     "blockedOrLimited": [
       {
@@ -135,6 +135,7 @@
     "rainLoop": "assets/rainy-night/rain-overlay-128.webp",
     "rainLoopMetadata": "assets/rainy-night/rain-overlay-128.json",
     "cafeKeyframe": "assets/rainy-night/cafe-window-keyframe.jpg",
-    "notes": "Included in weekly downloadable bundles."
+    "notes": "Included in weekly downloadable bundles.",
+    "cafeSteam": "assets/rainy-night/cafe-steam-128.webp"
   }
 }
