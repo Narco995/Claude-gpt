@@ -23,9 +23,9 @@ jobs:
           node --check scripts/create-reel-brief.mjs
           node --check scripts/create-production-pack.mjs
           node --check scripts/generate-weekly-plan.mjs
-      - name: Test production pack generator
+      - name: Test standalone production pack generator
         run: npm run production-pack -- "Rainy night cafe"
-      - name: Test weekly planner
+      - name: Test weekly planner and three production packs
         env:
           TZ: Asia/Dubai
         run: npm run weekly-plan
@@ -38,3 +38,5 @@ jobs:
           test -s projects/rainy-night-cafe/edit-plan-vn.md
           test -s projects/rainy-night-cafe/caption-draft.md
           test -s projects/rainy-night-cafe/asset-checklist.md
+          find projects/weekly -name edit-plan-vn.md -print -quit | grep -q .
+          find weekly-plans -name '*.md' -print -quit | grep -q .
