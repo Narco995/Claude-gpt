@@ -59,3 +59,7 @@ Automated: briefs, prompts, shot lists, captions, VN edit plans, asset checklist
 Still requires a person or a connected generation service: creating image/video media, choosing music with appropriate rights, reviewing exports and publishing to Instagram. No paid model API key is required by the included workflows.
 
 See [AUTOMATION.md](AUTOMATION.md) for details, [docs/plugin-audit.md](docs/plugin-audit.md) for the connected-tool review, and [docs/production-pipeline.md](docs/production-pipeline.md) for provider routing. Each production pack now includes generation-routing.md.
+
+## Connected production tools
+
+See docs/plugin-audit.md for the account-aware tool audit and docs/production-pipeline.md for the recommended production workflow. Provider routing is also included in each generated Reel pack.
