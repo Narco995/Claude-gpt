@@ -63,3 +63,7 @@ See [AUTOMATION.md](AUTOMATION.md) for details, [docs/plugin-audit.md](docs/plug
 ## Connected production tools
 
 See docs/plugin-audit.md for the account-aware tool audit and docs/production-pipeline.md for the recommended production workflow. Provider routing is also included in each generated Reel pack.
+
+## Reusable rainy-night assets
+
+The repository includes an 8-frame looping pixel-art rain overlay and a cinematic café-window style reference under `assets/rainy-night/`. These files are included in the weekly downloadable bundle and referenced automatically by rain-themed VN edit plans.
