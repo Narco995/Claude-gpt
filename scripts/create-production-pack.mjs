@@ -3,15 +3,23 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const title = process.argv.slice(2).join(' ').trim();
+const args = process.argv.slice(2);
+const weekIndex = args.indexOf('--week');
+const weekKey = weekIndex >= 0 ? args[weekIndex + 1] : null;
+if (weekIndex >= 0 && (!weekKey || !/^\d{4}-W\d{2}$/.test(weekKey))) {
+  console.error('The --week option must be followed by a value like 2026-W48.');
+  process.exit(1);
+}
+const title = args.filter((arg, index) => index !== weekIndex && index !== weekIndex + 1).join(' ').trim();
 if (!title) {
-  console.error('Usage: npm run production-pack -- "Rainy night cafe"');
+  console.error('Usage: npm run production-pack -- "Rainy night cafe" [--week 2026-W48]');
   process.exit(1);
 }
 
 const slug = title.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'untitled-reel';
-const output = path.join(root, 'projects', slug);
-if (fs.existsSync(output)) {
+const parent = weekKey ? path.join(root, 'projects', 'weekly', weekKey) : path.join(root, 'projects');
+const output = path.join(parent, slug);
+if (fs.existsSync(output) && !weekKey) {
   console.error('Project already exists: ' + path.relative(root, output));
   process.exit(1);
 }
