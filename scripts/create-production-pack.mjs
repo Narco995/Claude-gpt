@@ -28,6 +28,7 @@ let setting = 'a rain-soaked city street at midnight, wet pavement reflecting di
 if (/cafe|café|coffee|espresso/.test(lower)) setting = 'a tiny late-night café with rain-streaked windows, warm amber lamps, a quiet counter and reflections on the glass';
 if (/bedroom|sleep|room|window/.test(lower)) setting = 'a quiet small bedroom at night, one warm bedside lamp, rain on the window and a deep blue city beyond the glass';
 if (/train|metro|station/.test(lower)) setting = 'a nearly empty late-night train platform, rain reflections, distant city lights and a quiet cinematic atmosphere';
+if (/window seat/.test(lower)) setting = 'a late-night café window seat overlooking a rain-soaked city, warm amber light inside and muted teal reflections outside';
 const visual = 'dark cinematic pixel art, crisp deliberate pixel clusters, deep navy shadows, muted teal reflections, restrained warm amber practical lights, atmospheric depth, vertical 9:16, no text, no logo, no watermark';
 const shots = [
   { id: '01', duration: 4, name: 'Establishing mood', visual: 'Wide establishing view of ' + setting + '. No close-up character details; let the environment tell the story.', action: 'Rain falls steadily; distant light reflections shimmer subtly.', camera: 'Very slow push-in' },
