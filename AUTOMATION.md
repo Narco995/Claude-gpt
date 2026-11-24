@@ -13,9 +13,9 @@ The command creates `projects/<slug>/` with:
 - CSV shot list
 - Individual image prompts and image-to-video motion prompts
 - VN Video Editor timeline and layer order
-- Caption draft and asset checklist
+- Caption draft, asset checklist and provider routing guide
 
-It uses local Node.js only. It does not call a paid model API or generate the actual media files.
+It uses local Node.js only. It does not call a paid model API or generate the actual media files. The routing guide names Krea, Pixel Engine, audio and editing routes with cost/entitlement checks before generation.
 
 ## 2. Generate the weekly plan
 
@@ -35,7 +35,7 @@ The **Weekly Reel planner** also runs every Monday at 08:00 UAE time (04:00 UTC)
 
 Automated: story structure, prompts, shot lists, caption starters, VN edit plans, asset checklists, weekly planning, three weekly production packs and packaging.
 
-Still requires a person or a connected generation service: creating image/video media, choosing music with appropriate rights, final quality review and Instagram publishing. The workflows do not need an API key.
+Still requires a person or a connected generation service: creating image/video media, choosing music with appropriate rights, final quality review and Instagram publishing. The GitHub planning workflows do not need an API key. Media generation is a separate provider step and may require credits or account entitlement. See docs/plugin-audit.md.
 
 ## 5. GitHub Actions permissions
 
