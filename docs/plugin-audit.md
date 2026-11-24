@@ -7,21 +7,21 @@ This is an account-aware capability snapshot. A listed model does not guarantee 
 | Stage | Tool | Practical value | Current decision |
 |---|---|---|---|
 | Story, prompts and shot lists | GitHub scripts + Animation Maker skills | Repeatable pre-production | Use now |
-| Cinematic stills | Krea | Broad image models, references and 9:16 output | Primary still route; check entitlement and cost |
-| Pixel assets | Pixel Engine | Exact pixel-grid sprites, palettes and sprite animation | Primary sprite route; 100 monthly credits reported |
-| Image-to-video | Krea | Hailuo, Veo, Kling, Seedance, LTX and other video models | Primary motion candidate; check entitlement and cost per job |
+| Cinematic stills | Magnific Free, then Krea when API units return | Free daily still images; Krea has a broad image catalogue | Magnific: 20 free image uses reported today; Krea API compute balance is 0 |
+| Pixel assets | Pixel Engine | Exact pixel-grid sprites, palettes and sprite animation | 74 monthly credits remain after a rain sprite and loop were generated |
+| Image-to-video | No confirmed free API route | Magnific video is paid-only; Krea API balance is 0; Runway has no enabled video model | Keep motion generation optional until a free eligible route is verified |
 | Audio | ElevenLabs / Krea | Voice, music, ambience, SFX and dialogue | Optional; estimate cost first |
 | Final edit | VN Video Editor | Mobile timeline, layers, sound mix and export | Keep as main editor |
 | Cleanup and resize | Adobe | Supported image/video edits, resize, stitch and Quick Cut | Use for specific tasks |
-| Covers and brand graphics | Canva / Adobe Express / Artboard | Editable covers, templates, resizing and brand assets | Canva connected; no Brand Kit found |
-| Scheduling and analytics | Metricool | Scheduled posts, review flows, best-time recommendations and analytics | Plugin connected; account/brand selection still needs resolution |
+| Covers and brand graphics | Canva / Adobe Express / Artboard | Editable covers, templates, resizing and brand assets | Canva tools connected; no existing Brand Kit found |
+| Scheduling and analytics | Metricool | Scheduled posts, review flows, best-time recommendations and analytics | Plugin connected, but no social network is connected to the current brand |
 | Research | Firecrawl / Browser Use | Search, scrape, public research and monitoring | Use selectively |
 | Repository automation | GitHub Actions | Weekly plan, production packs, validation and artifacts | Working |
 
 ## Creative provider findings
 
 ### Krea
-Connected workspace and live catalogue confirmed. The catalogue spans image, video, enhancement, 3D and audio. Schemas were checked for Krea 2 Medium, Nano Banana 2 Lite, Hailuo 2.3 Fast, Veo 3.1 Lite, Seedance 2 Mini and LTX 2.5 Fast. These are candidates, not guaranteed free models. A catalogue entry is not proof that this account can run it. Check the current model list, schema, entitlement and quote before each generation. Krea's public pricing advertises 100 free units daily, but that does not prove the connector API shares the same allowance. [Krea pricing](https://www.krea.ai/pricing).
+Connected workspace and live catalogue confirmed. The catalogue spans image, video, enhancement, 3D and audio. Schemas were checked for Krea 2 Medium, Nano Banana 2 Lite, Hailuo 2.3 Fast, Veo 3.1 Lite, Seedance 2 Mini and LTX 2.5 Fast. However, the connected Krea API workspace currently reports **0 compute units on its Free plan**. This blocks generation through this connector until API units are available. Krea's public website advertises 100 free units daily, but that does not prove those website units can be spent through the API connector. Keep Krea as a future fallback; do not route current production to it while the API balance is zero. [Krea pricing](https://www.krea.ai/pricing).
 
 ### Pixel Engine
 Connected. Balance check returned 100 monthly credits and zero reserved. Tool descriptions report 6 credits for an exact-grid sprite, 20 for a v1.1 animation and 26 for a v1.5 animation. Use for characters, props and small loops—not full cinematic backgrounds.
@@ -87,7 +87,7 @@ Krea's public node-app listing contains community workflows; the workspace-only 
 4. Estimate costs before paid or multi-shot batches.
 5. Never retry an uncertain asynchronous job.
 6. Review every export and obtain approval before publishing.
-7. Do not schedule until Metricool resolves the intended Instagram brand and the finished video is available.
+7. Do not schedule until Metricool has the intended Instagram profile connected, its brand is resolved and the finished MP4 is available.
 
 
 ## Other relevant plugins found in the directory
