@@ -10,7 +10,8 @@ if (weekIndex >= 0 && (!weekKey || !/^\d{4}-W\d{2}$/.test(weekKey))) {
   console.error('The --week option must be followed by a value like 2026-W48.');
   process.exit(1);
 }
-const title = args.filter((arg, index) => index !== weekIndex && index !== weekIndex + 1).join(' ').trim();
+const titleArgs = weekIndex >= 0 ? args.filter((arg, index) => index !== weekIndex && index !== weekIndex + 1) : args;
+const title = titleArgs.join(' ').trim();
 if (!title) {
   console.error('Usage: npm run production-pack -- "Rainy night cafe" [--week 2026-W48]');
   process.exit(1);
