@@ -1,0 +1,106 @@
+{
+  "policy": {
+    "budgetMode": "free-first",
+    "neverSpendWithoutApproval": true,
+    "neverAssumeFreeTierEqualsApiAccess": true,
+    "checkLiveModelCatalogBeforeGeneration": true,
+    "checkModelSchemaBeforeGeneration": true
+  },
+  "image": {
+    "primary": {
+      "provider": "Krea",
+      "model": "krea/krea-2/medium",
+      "use": "illustrated environments and style exploration",
+      "access": "catalogued; entitlement and balance must be checked"
+    },
+    "budgetAlternative": {
+      "provider": "Pixel Engine",
+      "model": "nb_flash",
+      "costCredits": 12,
+      "use": "pixel sprites and props"
+    },
+    "secondary": {
+      "provider": "Magnific",
+      "use": "occasional still concepts",
+      "access": "20 daily free image uses in auto mode; no video credits"
+    }
+  },
+  "video": {
+    "primary": {
+      "provider": "Krea",
+      "modelCandidates": [
+        "minimax/hailuo-2.3-fast",
+        "google/veo-3.1-lite",
+        "bytedance/seedance-2-mini",
+        "lightricks/ltx-video-2.5-fast"
+      ],
+      "use": "image-to-video from approved stills",
+      "access": "catalogued; check entitlement and cost"
+    },
+    "spriteAlternative": {
+      "provider": "Pixel Engine",
+      "costCredits": {
+        "pixel-engine-v1.1": 20,
+        "pixel-engine-v1.5": 26
+      },
+      "use": "short looping sprite animation",
+      "access": "100 monthly credits reported"
+    },
+    "blockedOrLimited": [
+      {
+        "provider": "Runway",
+        "reason": "1 credit and no available video models"
+      },
+      {
+        "provider": "Magnific",
+        "reason": "no video credits on free account"
+      },
+      {
+        "provider": "3D Animation",
+        "reason": "zero credits reported"
+      }
+    ]
+  },
+  "audio": {
+    "primary": {
+      "provider": "Krea",
+      "use": "music, sound and speech where entitled"
+    },
+    "secondary": {
+      "provider": "ElevenLabs",
+      "use": "narration, dialogue and sound effects",
+      "access": "voice catalogue available; estimate generation cost"
+    },
+    "note": "Default atmospheric Reels can use ambience without voiceover."
+  },
+  "editing": {
+    "primary": "VN Video Editor",
+    "support": [
+      "Adobe",
+      "Krea enhancement/video tools"
+    ]
+  },
+  "publishing": {
+    "primary": "Metricool",
+    "status": "connected but no social profile is connected yet",
+    "freePlanReference": {
+      "brands": 1,
+      "publishedPostsPerMonth": 20,
+      "analyticsHistoryDays": 30
+    },
+    "workflow": "Connect Instagram first; schedule reviewed MP4s only."
+  },
+  "design": {
+    "primary": "Canva",
+    "status": "connection pending",
+    "use": "covers, thumbnails, caption cards and brand templates"
+  },
+  "planningAndResearch": {
+    "primary": "GitHub Actions",
+    "secondary": [
+      "Firecrawl",
+      "Notion"
+    ],
+    "firecrawlCreditsReported": 1000
+  }
+}
