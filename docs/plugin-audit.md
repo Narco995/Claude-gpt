@@ -1,105 +1,90 @@
 # Connected tool audit — 24 November 2026
 
-This is a live capability/access snapshot from the connected tool catalog and account checks. A listed model does not guarantee entitlement; free web-app credits do not automatically equal API credits.
+This is an account-aware capability snapshot. A listed model does not guarantee entitlement, and a free web-app allowance does not automatically apply to API calls.
 
 ## Recommended studio stack
-| Stage | Tool | Practical value | Current status |
+
+| Stage | Tool | Practical value | Current decision |
 |---|---|---|---|
-| Story, prompts, shot lists | Node scripts + ChatGPT | Repeatable production packs | Working in GitHub |
-| Image generation | Krea | Broad image model catalogue, references and 9:16 output | Krea 2 Medium and Nano Banana Lite schemas readable; API balance/entitlement not confirmed |
-| Pixel assets | Pixel Engine | Exact pixel-grid sprites, palettes, background removal and sprite animation | 100 monthly credits reported |
-| Image-to-video | Krea | Hailuo, Veo, Kling, Seedance, LTX and other video models | Models catalogued; entitlement and price must be checked per run |
-| 3D motion | PINOC | Rigged 3D characters and skeleton animation | 60 free credits; library motions are free; generated motion costs 1 credit/second |
-| Audio | ElevenLabs / Krea | Voiceover, music, SFX and dialogue | Voice catalogue visible; generation balance must be estimated |
-| Cleanup / resize | Adobe | Image edits, crop/resize, video resize/render/stitch, assets | Connector initialized; feature entitlements vary |
-| Final edit | VN Video Editor | Mobile timeline, sound mix and final export | Keep as main editor |
-| Scheduling / analytics | Metricool | Planner, best-time data and analytics | Plugin connected; no social account connected yet |
-| Cover design | Canva | Templates, resize, brand kit and bulk layouts | Connection pending |
-| Scheduled code work | GitHub Actions | Weekly plan, packs, validation and artifacts | Working |
-| Trend research | Firecrawl | Search, scrape, crawl and recurring monitors | 1,000 credits reported |
-| SOP / editorial database | Notion | Durable content tracker and style guide | Workspace connected; no database created |
-| Hosting | Railway / Vercel | Future dashboard or backend | Railway workspace empty; Vercel Git context has no linked projects/teams |
-| Browser / desktop control | Browser Use, BCD, Extra Desktop Operator | Cloud browser or local GUI workflows | Browser extension context unavailable; no desktop device paired |
+| Story, prompts and shot lists | GitHub scripts + Animation Maker skills | Repeatable pre-production | Use now |
+| Cinematic stills | Krea | Broad image models, references and 9:16 output | Primary still route; check entitlement and cost |
+| Pixel assets | Pixel Engine | Exact pixel-grid sprites, palettes and sprite animation | Primary sprite route; 100 monthly credits reported |
+| Image-to-video | Krea | Hailuo, Veo, Kling, Seedance, LTX and other video models | Primary motion candidate; check entitlement and cost per job |
+| Audio | ElevenLabs / Krea | Voice, music, ambience, SFX and dialogue | Optional; estimate cost first |
+| Final edit | VN Video Editor | Mobile timeline, layers, sound mix and export | Keep as main editor |
+| Cleanup and resize | Adobe | Supported image/video edits, resize, stitch and Quick Cut | Use for specific tasks |
+| Covers and brand graphics | Canva / Adobe Express / Artboard | Editable covers, templates, resizing and brand assets | Canva connected; no Brand Kit found |
+| Scheduling and analytics | Metricool | Scheduled posts, review flows, best-time recommendations and analytics | Plugin connected; account/brand selection still needs resolution |
+| Research | Firecrawl / Browser Use | Search, scrape, public research and monitoring | Use selectively |
+| Repository automation | GitHub Actions | Weekly plan, production packs, validation and artifacts | Working |
 
-## Provider findings
+## Creative provider findings
 
-### Krea — preferred image/video router
-- Connected workspace and live model catalogue are available.
-- Catalogue spans image, video, enhancement, 3D and audio.
-- Image models include Krea 2 Medium, Nano Banana Lite/Pro, Ideogram, Seedream and others.
-- Video models include Hailuo, Veo, Kling, Seedance, LTX and Wan.
-- Schemas were read for Krea 2 Medium, Nano Banana Lite, Hailuo 2.3 Fast, Veo 3.1 Lite, Seedance 2 Mini and LTX 2.5 Fast.
-- The API model list is not proof that every model is enabled for this account. Check balance/entitlement and cost before generation.
-- Krea's public Free page advertises 100 daily units and some free video models; this is not proof that the API connector draws from the same allowance.
+### Krea
+Connected workspace and live catalogue confirmed. The catalogue spans image, video, enhancement, 3D and audio. Schemas were checked for Krea 2 Medium, Nano Banana 2 Lite, Hailuo 2.3 Fast, Veo 3.1 Lite, Seedance 2 Mini and LTX 2.5 Fast. These are candidates, not guaranteed free models. A catalogue entry is not proof that this account can run it. Check the current model list, schema, entitlement and quote before each generation. Krea's public pricing advertises 100 free units daily, but that does not prove the connector API shares the same allowance. [Krea pricing](https://www.krea.ai/pricing).
 
-### Pixel Engine — specialist pixel tool
-- 100 monthly credits reported.
-- Sprite generation supports exact pixel sizes, palettes and transparent/background workflows.
-- Sprite animation supports short loops and spritesheet outputs; listed animation prices are 20 or 26 credits.
-- Use for character sprites, props and small loops—not complete cinematic backgrounds.
+### Pixel Engine
+Connected. Balance check returned 100 monthly credits and zero reserved. Tool descriptions report 6 credits for an exact-grid sprite, 20 for a v1.1 animation and 26 for a v1.5 animation. Use for characters, props and small loops—not full cinematic backgrounds.
 
-### Runway — demote from primary renderer
-- Authenticated personal workspace; 1 credit available.
-- No available video, speech, music or sound-effect models in this workspace.
-- Keep as optional image tooling only if useful; do not route the main video pipeline through it.
-
-### Magnific — still-image backup
-- Free account reports 20 daily image uses in automatic image mode.
-- Zero paid credits and no video credits.
-- Use for occasional still concepts, not video rendering.
-
-### PINOC / Aya / 3D
-- PINOC: 60 free credits; 3D character generation costs 6 credits and generated motion costs 1 credit/second. Library motion clips are free.
-- Aya Studio: trial workspace with 15 credits; useful for cartoon stills and short cartoon clips, but not the default dark cinematic pixel-art style.
-- 3D Animation: zero credits; exclude from the free-first route.
-
-### HeyGen
-- Connected free subscription; no premium/add-on credit wallet balance was reported.
-- Strong for avatars, talking-heads, presenter-led video and speech.
-- Not a first choice for atmospheric faceless pixel-art scenes.
+### Magnific
+Connected on the Free plan. Balance check reported 20 daily free image uses for its automatic image-generation path and zero paid credits. It exposes image/video/3D/audio operations and professional finishing, but paid work must be priced first. Do not make it the default video renderer while paid credits are zero.
 
 ### ElevenLabs
-- First page returned 15 English storytelling/narration voices.
-- Useful for narration, dialogue, music and sound design.
-- Estimate generation cost before use; voice discovery alone is not a generation entitlement.
+Connected. Voice search returned English storytelling voices. Tools include speech, music, SFX, voice design, transcription, dubbing and creative video flows. A numeric generation balance was not confirmed. Use estimate-only before paid generation. Default to ambience-first; narration is optional.
 
 ### Adobe
-- Connector initialization succeeded.
-- Useful for image generation/editing, background removal, crop/resize, video resize/render/stitch, Quick Cut and Creative Cloud asset handling.
-- Some operations require signed-in entitlements. Do not assume all features are included.
-
-### Metricool
-- Plugin is connected, but its brand currently has no social network connected. Metricool asks the user to connect at least one network.
-- Official help states Free has 1 brand, 20 published posts/month and 30 days of analytics. Three Reels/week is roughly 12 posts/month if publishing only to one network.
-- Metricool MCP is available on any plan; API access for external integrations requires Advanced or Custom.
-- Do not schedule until Instagram is connected and a finished video URL exists.
+Connected and initialized. Useful operations include supported image generation/editing, background removal, crop/expand, Express templates, fonts, social variations, video resize/render/stitch and Quick Cut. Quick Cut selects highlights from existing footage; it is not the main route for quiet ambience loops. Keep VN as the primary mobile editor.
 
 ### Canva
-- Suggested because it can create/edit social designs, resize assets and use brand kits.
-- Connection is still pending. Useful for Reel covers and branded cards after connection; bulk create requires an eligible plan.
+Connected successfully. Brand Kit search returned no existing Brand Kits. Canva supports editable designs, social graphics, image generation/editing, resize, reusable templates, asset upload and design feedback. Use for a reusable 9:16 cover system, profile graphics and title cards. Bulk Create may require an eligible paid tier; do not assume it is free.
 
-### Research, browser, project management and deployment
-- Firecrawl: 1,000 credits reported; use for tool/pricing research and trend monitoring.
-- Notion: authenticated workspace; can host a style guide/SOP/content calendar if requested.
-- ClickUp: connected account but no spaces or lists in the workspace hierarchy.
-- Browser Use: cloud browser tools exist; local browser extension context is unavailable in this chat.
-- BCD and Extra Desktop Operator: no computer paired. Do not claim desktop control.
-- GitHub: authenticated as repository owner; keep Actions as the zero-cost scheduler and artifact store.
-- Railway: registered account, but no projects in its personal workspace.
-- Vercel: authenticated Hobby account; Git deployment context returned no linked projects/teams.
+### Metricool
+Plugin connection is now available. The toolset supports brand settings, scheduled-post management, approval/review flows, best-time-to-post recommendations and analytics. The initial brand lookup failed because the current call could not resolve an eligible linked account, so no Instagram brand ID or account permissions have been confirmed. Recheck the account selector and connected brand before scheduling. An Instagram Reel needs an actual finished video URL; Metricool does not generate the video.
 
-## Secondary / non-core tools
-- Artboard Mockups: editable product/device mockups and animated mockup timelines; useful for promos, not core atmospheric scenes.
-- Krikey and Anime Stories: character-led 3D/anime alternatives, not the locked pixel-art look.
-- Aya: cartoon-only creative alternative.
-- Firecrawl's research-paper, legal, protein and job-search endpoints are unrelated to this content pipeline.
-- Vercel/Railway infrastructure tools become useful only if a web dashboard/backend is needed.
-- ClickUp is unnecessary until a populated workspace exists.
+### Artboard Mockups
+Connected. Project, template, canvas-layer and motion-card operations are useful for cover art, title cards and branded graphics, not as the primary cinematic generator.
+
+### Aya Studio
+Connected trial workspace showed 15 credits. It can create cartoon pictures, character sheets and short animated/talking-character clips. Reserve for a specific cartoon format or test, not the default dark cinematic pixel-art route.
+
+### PINOC
+Connected with 60 free credits. Generates rigged 3D characters and skeletal motion. Library motion clips are free, so search the library before generating. Use only when a recurring 3D character is genuinely required.
+
+### HeyGen
+Connected on a Free plan. Useful for avatars, animated shorts, image/video generation, dubbing, subtitles and presenter-led content. Better for narration or a character-led series than atmospheric city loops. Numeric credits were not returned.
+
+### Runway
+Connected workspace currently reports no available video, speech, music or sound-effect models and a 1-credit balance. Do not route current video production through Runway. It may remain optional for image tasks if a live check confirms an enabled model.
+
+### Other creative tools
+- Krikey AI Animation: optional 3D avatar animation.
+- Anime Stories by ManyMotions: optional anime/cartoon story video.
+- AI Video & Image Creator: current service check reports image/video and ad-video handoff links available; this is a guided external handoff, not a GitHub API.
+- MegaScenes / 3D Animation: connected balance reported 0 credits; not a current route.
+
+## Research, code and operations tools
+
+- Firecrawl: connected; current balance showed 1,000 credits for the current billing period. Use for public tool/trend research and selective recurring monitors.
+- GitHub: connected with write access to Narco995/Claude-gpt. The production-pack validation workflow passed after the command-line argument parser was fixed.
+- ChatGPT Automations: available, but no saved tasks were found. GitHub Actions scheduling is separate.
+- Notion: connected; useful later for a content calendar, style bible and idea bank. No database was created during this audit.
+- ClickUp: connected, but workspace hierarchy currently has zero spaces. Not needed until a task board is deliberately created.
+- Vercel: authenticated, but no teams or Git-linked projects were returned for this repo.
+- Railway: authenticated, with a personal workspace and zero projects. Consider only if a future API relay/backend is required.
+- Browser Use: cloud browser tools are available for public research or approved browser tasks. Local browser tab access requires the originating browser-extension context and was unavailable in this iOS session.
+- BCD Bridge Control Delegate and Extra Desktop Operator: no computer is connected. Desktop automation of VN cannot run until a workstation is paired.
+- OpenAI Platform: API-key tooling is available but unnecessary for the current no-key workflow.
+- EmpirioLabs AI: multi-model catalogue; optional only after provider pricing/access checks.
+- Plugin Creator: can create private plugins, but not needed while existing connectors cover the core route.
+
+## Public Krea node-app caution
+Krea's public node-app listing contains community workflows; the workspace-only listing returned no shared apps. Do not execute arbitrary public node apps. Inspect owner, purpose, input schema and output schema first, and avoid unrelated or suspicious listings.
 
 ## Cost and publishing guardrails
 1. A free web-app allowance may not apply to API usage.
 2. A model in a catalogue may still be plan-gated.
-3. Read live model list and schema before generation.
+3. Read the live model list and schema before generation.
 4. Estimate costs before paid or multi-shot batches.
-5. Never retry an uncertain asynchronous generation.
+5. Never retry an uncertain asynchronous job.
 6. Review every export and obtain approval before publishing.
+7. Do not schedule until Metricool resolves the intended Instagram brand and the finished video is available.
