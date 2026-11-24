@@ -41,5 +41,6 @@ jobs:
           path: |
             weekly-plans/
             projects/weekly/
+            assets/rainy-night/
           if-no-files-found: error
           retention-days: 14
