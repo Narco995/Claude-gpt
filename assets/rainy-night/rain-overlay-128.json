@@ -1,0 +1,33 @@
+{
+  "asset": "rain-overlay-128.webp",
+  "category": "pixel-art-animation",
+  "description": "8-frame seamless diagonal rain texture for layering over dark cinematic night scenes.",
+  "dimensions": {
+    "width": 128,
+    "height": 128
+  },
+  "animation": {
+    "frames": 8,
+    "fps": 8,
+    "frame_duration_ms": 125,
+    "loop": true
+  },
+  "palette": [
+    "#7a7c81",
+    "#767f90",
+    "#0b1432",
+    "#1d2746",
+    "#59667b",
+    "#3a465e",
+    "#81a4bc"
+  ],
+  "source": {
+    "provider": "Pixel Engine",
+    "image_job_id": "00dd418c-ecdc-4c71-a857-4a06747031a2",
+    "animation_job_id": "13b5cb3c-89e7-44ad-9216-caeba741a4a3",
+    "seed": 2036377378,
+    "credits_total": 26,
+    "credits_remaining_after_generation": 74
+  },
+  "generation_prompt": "Starting state: many narrow rain streaks spaced across the full tile, all leaning slightly from upper-left to lower-right. Action: the rain falls steadily downward and diagonally to the lower-right, with a gentle stagger so individual streaks enter from the top as others leave the bottom; keep the density and direction consistent. Ending: return to the same rain arrangement and spacing as the opening frame for a seamless loop. Keep the camera fixed, no splash, no wind gust, no new objects, crisp pixel clusters."
+}
