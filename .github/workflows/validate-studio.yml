@@ -38,5 +38,6 @@ jobs:
           test -s projects/rainy-night-cafe/edit-plan-vn.md
           test -s projects/rainy-night-cafe/caption-draft.md
           test -s projects/rainy-night-cafe/asset-checklist.md
+          test -s projects/rainy-night-cafe/generation-routing.md
           find projects/weekly -name edit-plan-vn.md -print -quit | grep -q .
           find weekly-plans -name '*.md' -print -quit | grep -q .
