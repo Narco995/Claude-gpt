@@ -7,7 +7,7 @@ This is an account-aware capability snapshot. A listed model does not guarantee 
 | Stage | Tool | Practical value | Current decision |
 |---|---|---|---|
 | Story, prompts and shot lists | GitHub scripts + Animation Maker skills | Repeatable pre-production | Use now |
-| Cinematic stills | Magnific Free, then Krea when API units return | Free daily still images; Krea has a broad image catalogue | Magnific: 20 free image uses reported today; Krea API compute balance is 0 |
+| Cinematic stills | Magnific Free, then Krea when API units return | Free daily still images; Krea has a broad image catalogue | Magnific: 19 free image uses remain today; Krea API compute balance is 0 |
 | Pixel assets | Pixel Engine | Exact pixel-grid sprites, palettes and sprite animation | 74 monthly credits remain after a rain sprite and loop were generated |
 | Image-to-video | No confirmed free API route | Magnific video is paid-only; Krea API balance is 0; Runway has no enabled video model | Keep motion generation optional until a free eligible route is verified |
 | Audio | ElevenLabs / Krea | Voice, music, ambience, SFX and dialogue | Optional; estimate cost first |
@@ -24,10 +24,10 @@ This is an account-aware capability snapshot. A listed model does not guarantee 
 Connected workspace and live catalogue confirmed. The catalogue spans image, video, enhancement, 3D and audio. Schemas were checked for Krea 2 Medium, Nano Banana 2 Lite, Hailuo 2.3 Fast, Veo 3.1 Lite, Seedance 2 Mini and LTX 2.5 Fast. However, the connected Krea API workspace currently reports **0 compute units on its Free plan**. This blocks generation through this connector until API units are available. Krea's public website advertises 100 free units daily, but that does not prove those website units can be spent through the API connector. Keep Krea as a future fallback; do not route current production to it while the API balance is zero. [Krea pricing](https://www.krea.ai/pricing).
 
 ### Pixel Engine
-Connected. Balance check returned 100 monthly credits and zero reserved. Tool descriptions report 6 credits for an exact-grid sprite, 20 for a v1.1 animation and 26 for a v1.5 animation. Use for characters, props and small loops—not full cinematic backgrounds.
+Connected. Latest balance: 48 monthly credits, zero reserved. This session produced a reusable 8-frame rain loop (26 credits total) and an 8-frame café steam/cup detail loop (26 credits total). Use for environmental overlays and small loops—not full cinematic backgrounds.
 
 ### Magnific
-Connected on the Free plan. Balance check reported 20 daily free image uses for its automatic image-generation path and zero paid credits. It exposes image/video/3D/audio operations and professional finishing, but paid work must be priced first. Do not make it the default video renderer while paid credits are zero.
+Connected on the Free plan. Latest start check reported 19 free image uses remaining today; video generation is explicitly paid-only. It exposes image/video/3D/audio operations and professional finishing, but only the still-image auto mode currently fits the confirmed Free allowance. Keep video generation out of the zero-budget route.
 
 ### ElevenLabs
 Connected. Voice search returned English storytelling voices. Tools include speech, music, SFX, voice design, transcription, dubbing and creative video flows. A numeric generation balance was not confirmed. Use estimate-only before paid generation. Default to ambience-first; narration is optional.
@@ -36,10 +36,10 @@ Connected. Voice search returned English storytelling voices. Tools include spee
 Connected and initialized. Useful operations include supported image generation/editing, background removal, crop/expand, Express templates, fonts, social variations, video resize/render/stitch and Quick Cut. Quick Cut selects highlights from existing footage; it is not the main route for quiet ambience loops. Keep VN as the primary mobile editor.
 
 ### Canva
-Connected successfully. Brand Kit search returned no existing Brand Kits. Canva supports editable designs, social graphics, image generation/editing, resize, reusable templates, asset upload and design feedback. Use for a reusable 9:16 cover system, profile graphics and title cards. Bulk Create may require an eligible paid tier; do not assume it is free.
+Connected successfully. Brand Kit search returned no existing Brand Kits; design search is available and the Canva editing/design tools are exposed. Use for editable 9:16 covers, profile graphics and title cards. Check any AI-credit prompt before generating; keep the first cover template simple.
 
 ### Metricool
-Plugin connection is now available. The toolset supports brand settings, scheduled-post management, approval/review flows, best-time-to-post recommendations and analytics. The initial brand lookup failed because the current call could not resolve an eligible linked account, so no Instagram brand ID or account permissions have been confirmed. Recheck the account selector and connected brand before scheduling. An Instagram Reel needs an actual finished video URL; Metricool does not generate the video.
+The plugin and its action tools are connected. The live `getBrandSettings` call returned: **this brand has no social network connected yet**. Connect the intended Instagram Business or Creator account at [Metricool Connections](https://app.metricool.com/brands/connections?blogId=8330788), then call `getBrandSettings` again to verify the brand ID and permissions. A Reel still needs a finished video URL; Metricool does not render video.
 
 ### Artboard Mockups
 Connected. Project, template, canvas-layer and motion-card operations are useful for cover art, title cards and branded graphics, not as the primary cinematic generator.
