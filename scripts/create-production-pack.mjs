@@ -57,6 +57,7 @@ write('prompts/image-prompts.md', imagePrompts);
 write('prompts/video-prompts.md', videoPrompts);
 write('edit-plan-vn.md', editPlan);
 write('caption-draft.md', caption);
-write('asset-checklist.md', checklist);\nwrite('generation-routing.md', routing);
+write('asset-checklist.md', checklist);
+write('generation-routing.md', routing);
 console.log('Created production pack: ' + path.relative(root, output));
 console.log('Included: brief, 4-shot CSV, image/video prompts, VN edit plan, caption, asset checklist and provider routing.');
