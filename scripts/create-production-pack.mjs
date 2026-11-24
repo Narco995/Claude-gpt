@@ -52,7 +52,7 @@ const reusableRainAssetNote = hasRainyAsset
       '- Keyframe reference: `assets/rainy-night/cafe-window-keyframe.jpg` (dark navy/amber rainy café visual reference).',
       '- If VN does not import animated WebP, convert it to a supported video/PNG sequence before editing.',
       ''
-    ].join('\\n')
+    ].join('\n')
   : '';
 const editPlan = '# VN edit plan — ' + title + '\n\nProject: 1080 × 1920 (9:16), 30 fps, approximately 20 seconds.\n\n| Timeline | Clip | Edit | Audio / layers |\n|---|---|---|---|\n| 00:00–00:04 | Shot 01 | Start on the strongest frame; gentle push-in if source is static | Rain ambience, distant city tone\n| 00:04–00:09 | Shot 02 | Straight cut; preserve screen direction | Soft room or café tone, subtle cloth / cup sound\n| 00:09–00:14 | Shot 03 | Detail insert; keep transition simple | Steam, glass, cup or rain detail sound\n| 00:14–00:20 | Shot 04 | Hold the final mood; align ending with opening for a loop | Let ambience continue across the cut\n\n## Layer order\n\n1. Background plate\n2. Midground environment and reflections\n3. Character layer, if generated separately\n4. Foreground rain / glass / steam overlay\n5. Light bloom or subtle glow (low intensity)\n6. Captions and final sound mix' + reusableRainAssetNote + '\n## Export checklist\n\n- Canvas: 9:16, 1080 × 1920\n- Frame rate: 30 fps\n- Keep captions away from the bottom and right-side interface areas\n- Check the first and last frames as a loop\n- Listen once with headphones; check speech/music rights\n- Review the export before posting\n';
 const caption = '# Caption draft — ' + title + '\n\nSome nights move slower, and that is sometimes exactly what we need. 🌧️\n\nWhat would you call this moment?\n\n#PixelArt #CinematicAnimation #RainyNights #AestheticReels #VNEditor\n\nEdit the caption and hashtags to fit the finished video and current audience. Hashtags here are starter suggestions, not a virality guarantee.\n';
@@ -76,7 +76,7 @@ const checklist = [
   '- [ ] Final VN project and reviewed export',
   '',
   'Generated prompts are ready; actual images and video clips still need to be created in an image/video tool.'
-].join('\\n') + '\\n';
+].join('\n') + '\n';
 function write(relative, content) {
   const target = path.join(output, relative);
   fs.mkdirSync(path.dirname(target), { recursive: true });
