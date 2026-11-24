@@ -66,4 +66,4 @@ See docs/plugin-audit.md for the account-aware tool audit and docs/production-pi
 
 ## Reusable rainy-night assets
 
-The repository includes an 8-frame looping pixel-art rain overlay and a cinematic café-window style reference under `assets/rainy-night/`. These files are included in the weekly downloadable bundle and referenced automatically by rain-themed VN edit plans.
+The repository includes an 8-frame looping pixel-art rain overlay, an 8-frame café steam/cup detail loop and a cinematic café-window style reference under `assets/rainy-night/`. Rain-themed and café-themed packs reference the matching assets automatically. Both the manual and weekly GitHub Actions bundles include the asset directory.
